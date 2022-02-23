@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1> Title </h1>
+	
+<nav>
+
+        <a href="{{ url_for('create') }}">FlaskApp</a> <!-- url_for('function name, not route name') -->
+        <a href="{{ url_for('message') }}">FlaskApp</a>
+        <a href="#">About</a>
+
+    </nav>
+
+    <div class="content">
+        {% block content %} {% endblock %} 
+    </div> <!-- NOTE! content inside block content is the actual name of the block. Change this and it will route differently.-->
+
+</body>
+</html>
